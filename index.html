@@ -5,13 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBoard</title>
+    <!-- fontfamily link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind cdn link -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-blue: #3752FD;
+          --color-dark: #000000;
+          --color-dark-teal: #00303C;
+          --color-light-sky: #F4F7FF;
+
+        }
+      </style>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="poppins-font bg-light-sky mx-0">
+    <!-- header section start -->
+    <header class="mt-6">
+        <nav class="bg-white rounded-2xl px-6 py-4 w-11/12 mx-auto flex flex-row items-center justify-between">
+           <div class="flex flex-row justify-start items-center gap-1">
+            <div>
+                <img class="w-12" src="assets/logo.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-4xl font-normal">Dev<span class="font-bold">Board</span></h2>
+            </div>
+           </div>
+           <div class="flex flex-row justify-end items-center gap-8">
+            <div class="flex flex-row justify-between gap-2 rounded-3xl p-3 bg-light-sky">
+                <div class="">
+                    <img class="w-8" src="assets/checkbox.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-dark font-bold text-3xl">23</h2>
+                </div>
+            </div>
+            <div class="bg-light-sky p-3 rounded-full">
+                <img class="w-10" src="assets/theme-btn.png" alt="">
+            </div>
+           </div> 
+        </nav>
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main>
+        <section class="py-4 w-11/12 mx-auto flex flex-row items-center justify-between gap-6">
+            <div class="bg-white rounded-2xl p-6">
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6">
+                <div class="flex">
+                    <div>
+                        <img src="assets/activity.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Activity Log</h3>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
 
 </body>
 
