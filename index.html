@@ -61,10 +61,36 @@
     <main>
         <section class="py-4 w-11/12 mx-auto flex flex-row items-center justify-between gap-6">
             <div class="bg-white rounded-2xl p-6">
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="grid grid-cols-4 gap-6 border-b-2 border-dashed border-dark p-6">
+                    <!-- task Assigned box -->
+                    <div class="bg-light-sky rounded-xl p-8 flex flex-row justify-between items-center gap-4">
+                        <div class="bg-white rounded-full">
+                            <img class="p-4" src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-base font-medium">Task Assigned </p>
+                            <h3 class="text-3xl font-bold">06</h3>
+                        </div>
+                    </div>
+                    <!-- discover something box -->
+                    <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA]  to-[#9BA8F8] rounded-xl p-8 flex flex-row justify-center items-center gap-5 col-span-2">
+                        <div class="bg-white rounded-full">
+                            <img class="p-4" src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-white text-2xl font-medium">Discover Something <br> New Today!</h3>
+                        </div>
+                    </div>
+                    <!-- date box -->
+                    <div class="bg-light-sky rounded-xl p-8 flex flex-row justify-between items-center gap-4">
+                        <div class="bg-white rounded-full">
+                            <img class="p-4" src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-base font-medium">Task Assigned </p>
+                            <h3 class="text-3xl font-bold">05</h3>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <div></div>
@@ -76,7 +102,7 @@
                 </div>
             </div>
             <div class="bg-white rounded-2xl p-6">
-                <div class="flex">
+                <div class="flex flex-row">
                     <div>
                         <img src="assets/activity.png" alt="">
                     </div>
@@ -84,7 +110,10 @@
                         <h3>Activity Log</h3>
                     </div>
                 </div>
-                <div></div>
+                <button class="btn">Clear History</button>
+                <div id="history-container">
+
+                </div>
             </div>
         </section>
     </main>
