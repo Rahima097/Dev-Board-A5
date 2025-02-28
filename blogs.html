@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <!-- fontfamily link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind cdn link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-blue: #3752FD;
+          --color-dark: #000000;
+          --color-dark-teal: #00303C;
+          --color-light-sky: #F4F7FF;
+
+        }
+      </style>
+</head>
+
+<body class="poppins-font bg-light-sky mx-0">
+    <!-- header section start -->
+    <header class="mt-6">
+        <nav class="bg-white rounded-2xl px-6 py-4 w-11/12 mx-auto flex flex-row items-center justify-between">
+           <div class="flex flex-row justify-start items-center gap-1">
+            <div>
+                <img class="w-12" src="assets/logo.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-4xl font-normal">Dev<span class="font-bold">Board</span></h2>
+            </div>
+           </div>
+           <div class="">
+            <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Back to Desk</button>
+           </div> 
+        </nav>
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main>
+        <section class="py-4 w-11/12 mx-auto flex flex-col items-center justify-between gap-6">
+            <h2 class="text-3xl font-bold text-dark-teal">Blogs</h2>
+            <div class="w-full">
+                <div class="bg-white rounded-2xl p-6">
+                    <div class="flex flex-col gap-4 justify-center items-start">
+                        <h3 class="text-2xl font-medium text-dark-teal pb-4">Question-1: What are the different ways to select an element in the DOM? </h3>
+                    </div>
+                    <div class="border-t-2 border-dashed border-[#3751fd14]">
+                        <p class="text-base font-normal text-dark bg-white rounded-lg py-4 mb-3 ">Here different ways to select an element in the DOM <br>
+                          1. document. getElementById(),
+                          2. document. getElementsByClassName(),
+                          3. document. getElementsByTagName(),
+                          4. document. querySelector(),
+                          5. document. querySelectorAll() 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="bg-white rounded-2xl p-6">
+                    <div class="flex flex-col gap-4 justify-center items-start">
+                        <h3 class="text-2xl font-medium text-dark-teal pb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                    </div>
+                    <div class="border-t-2 border-dashed border-[#3751fd14]">
+                        <p class="text-base font-normal text-dark bg-white rounded-lg py-4 mb-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam non porro consequatur debitis labore excepturi cumque, doloribus sint? Pariatur architecto cum nostrum, sint fuga quam dolorem minus a qui? Et? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="bg-white rounded-2xl p-6">
+                    <div class="flex flex-col gap-4 justify-center items-start">
+                        <h3 class="text-2xl font-medium text-dark-teal pb-4">Question-3: What is event delegation in the DOM?</h3>
+                    </div>
+                    <div class="border-t-2 border-dashed border-[#3751fd14]">
+                        <p class="text-base font-normal text-dark bg-white rounded-lg py-4 mb-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam non porro consequatur debitis labore excepturi cumque, doloribus sint? Pariatur architecto cum nostrum, sint fuga quam dolorem minus a qui? Et? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="bg-white rounded-2xl p-6">
+                    <div class="flex flex-col gap-4 justify-center items-start">
+                        <h3 class="text-2xl font-medium text-dark-teal pb-4">Question-4: What is event bubbling in the DOM?</h3>
+                    </div>
+                    <div class="border-t-2 border-dashed border-[#3751fd14]">
+                        <p class="text-base font-normal text-dark bg-white rounded-lg py-4 mb-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam non porro consequatur debitis labore excepturi cumque, doloribus sint? Pariatur architecto cum nostrum, sint fuga quam dolorem minus a qui? Et? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="bg-white rounded-2xl p-6">
+                    <div class="flex flex-col gap-4 justify-center items-start">
+                        <h3 class="text-2xl font-medium text-dark-teal pb-4">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                    </div>
+                    <div class="border-t-2 border-dashed border-[#3751fd14]">
+                        <p class="text-base font-normal text-dark bg-white rounded-lg py-4 mb-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam non porro consequatur debitis labore excepturi cumque, doloribus sint? Pariatur architecto cum nostrum, sint fuga quam dolorem minus a qui? Et? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+</body>
+
+</html>
