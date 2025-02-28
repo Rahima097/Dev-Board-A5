@@ -60,8 +60,8 @@
     <!-- main section start -->
     <main>
         <section class="py-4 w-11/12 mx-auto flex flex-row items-center justify-between gap-6">
-            <div class="bg-white rounded-2xl p-6">
-                <div class="grid grid-cols-4 gap-6 border-b-2 border-dashed border-dark p-6">
+            <div class="bg-white rounded-2xl w-10/12 mb-14 h-[930px]">
+                <div class="grid grid-cols-4 gap-6 border-b-2 border-dashed border-[#3751fd14] p-6">
                     <!-- task Assigned box -->
                     <div class="bg-light-sky rounded-xl p-8 flex flex-row justify-between items-center gap-4">
                         <div class="bg-white rounded-full">
@@ -74,8 +74,8 @@
                     </div>
                     <!-- discover something box -->
                     <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA]  to-[#9BA8F8] rounded-xl p-8 flex flex-row justify-center items-center gap-5 col-span-2">
-                        <div class="bg-white rounded-full">
-                            <img class="p-4" src="assets/checkbox.png" alt="">
+                        <div class="">
+                            <img class="p-4" src="assets/board.png" alt="">
                         </div>
                         <div>
                             <h3 class="text-white text-2xl font-medium">Discover Something <br> New Today!</h3>
@@ -92,25 +92,124 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <!-- all card boxes start -->
+                <div class="grid grid-cols-3 gap-9 p-6">
+                    <!-- ShopEase card box -->
+                    <div class="bg-light-sky rounded-2xl p-6">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <button class="btn text-base font-medium rounded-lg text-dark bg-white py-2 px-5 ">ShopEase</button>
+                            <h3 class="text-2xl font-medium text-dark-teal">Fix Mobile Button Issue </h3>
+                            <p class="text-base font-normal text-dark bg-white rounded-lg p-4 mb-3">Debug using Chrome DevTools, check for overlapping...</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-center border-t-2 border-dashed border-[#3751fd14] py-3">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CloudSync card box -->
+                    <div class="bg-light-sky rounded-2xl p-6">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <button class="btn text-base font-medium rounded-lg text-dark bg-white py-2 px-5 ">CloudSync</button>
+                            <h3 class="text-2xl font-medium text-dark-teal">Add Dark Mode </h3>
+                            <p class="text-base font-normal text-dark bg-white rounded-lg p-4 mb-3">Store the user's preference in localStorage, update CSS varia...</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-center border-t-2 border-dashed border-[#3751fd14] py-3">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SwiftPay card box -->
+                    <div class="bg-light-sky rounded-2xl p-6">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <button class="btn text-base font-medium rounded-lg text-dark bg-white py-2 px-5 ">SwiftPay</button>
+                            <h3 class="text-2xl font-medium text-dark-teal">Optimize  Home page  </h3>
+                            <p class="text-base font-normal text-dark bg-white rounded-lg p-4 mb-3">SDebug using Chrome DevTools, check for overlappin...</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-center border-t-2 border-dashed border-[#3751fd14] py-3">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Meta card box -->
+                    <div class="bg-light-sky rounded-2xl p-6">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <button class="btn text-base font-medium rounded-lg text-dark bg-white py-2 px-5 ">Meta</button>
+                            <h3 class="text-2xl font-medium text-dark-teal">Add new emoji 🤲 </h3>
+                            <p class="text-base font-normal text-dark bg-white rounded-lg p-4 mb-3">Debug using Chrome DevTools, check for overlappin...</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-center border-t-2 border-dashed border-[#3751fd14] py-3">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Google LLC card box -->
+                    <div class="bg-light-sky rounded-2xl p-6">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <button class="btn text-base font-medium rounded-lg text-dark bg-white py-2 px-5 ">Google LLC</button>
+                            <h3 class="text-2xl font-medium text-dark-teal">Integrate OpenAI API </h3>
+                            <p class="text-base font-normal text-dark bg-white rounded-lg p-4 mb-3">Store the user's preference in localStorage, update CSS varia...</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-center border-t-2 border-dashed border-[#3751fd14] py-3">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Glassdoar card box -->
+                    <div class="bg-light-sky rounded-2xl p-6">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <button class="btn text-base font-medium rounded-lg text-dark bg-white py-2 px-5 ">Glassdoar</button>
+                            <h3 class="text-2xl font-medium text-dark-teal">Improve Job searching</h3>
+                            <p class="text-base font-normal text-dark bg-white rounded-lg p-4 mb-3">Debug using Chrome DevTools, check for overlappi...</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-center border-t-2 border-dashed border-[#3751fd14] py-3">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl p-6">
-                <div class="flex flex-row">
+            <div class="bg-white rounded-2xl p-6 w-2/12 flex flex-col gap-4 mb-14 h-[930px]">
+                <div class="flex flex-row justify-center items-center gap-4">
                     <div>
                         <img src="assets/activity.png" alt="">
                     </div>
                     <div>
-                        <h3>Activity Log</h3>
+                        <h3 class="text-xl font-medium">Activity Log</h3>
                     </div>
                 </div>
-                <button class="btn">Clear History</button>
+                <div class="border-b-2 border-dashed border-[#3751fd14] pb-3 text-center ">
+                    <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Clear History</button>
+                </div>
                 <div id="history-container">
 
                 </div>
