@@ -1,4 +1,4 @@
-const taskTitle = document.querySelector(".task-title")
+const taskTitle = document.getElementsByClassName(".task-title")
 const completedBtns = document.querySelectorAll(".completed-btn");
 for (let i = 0; i < completedBtns.length; i++) {
     const completedBtn = completedBtns[i];
@@ -16,7 +16,7 @@ for (let i = 0; i < completedBtns.length; i++) {
 
             const sum1 = totalCount + 1;
             const sum2 = incompleteTask - 1;
-            
+
             setInnerTextByIDandValue("total-count",sum1);
             setInnerTextByIDandValue("incomplete-task",sum2);
 
@@ -30,3 +30,9 @@ for (let i = 0; i < completedBtns.length; i++) {
         }
     })
 }
+
+// blog page connect with discover something box
+document.getElementById("discover-something").addEventListener("click", function(){
+    window.location.href="./blogs.html"
+})
+
