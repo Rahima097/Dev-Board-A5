@@ -47,7 +47,7 @@
                     <img class="w-8" src="assets/checkbox.png" alt="">
                 </div>
                 <div>
-                    <h2 class="text-dark font-bold text-3xl">23</h2>
+                    <h2 id="total-count" class="text-dark font-bold text-3xl">23</h2>
                 </div>
             </div>
             <div class="bg-light-sky p-3 rounded-full">
@@ -60,7 +60,7 @@
     <!-- main section start -->
     <main>
         <section class="py-4 w-11/12 mx-auto flex flex-row items-center justify-between gap-6">
-            <div class="bg-white rounded-2xl w-10/12 mb-14 h-[930px]">
+            <div class="bg-white rounded-2xl w-10/12 mb-10 h-[930px]">
                 <div class="grid grid-cols-4 gap-6 border-b-2 border-dashed border-[#3751fd14] p-6">
                     <!-- task Assigned box -->
                     <div class="bg-light-sky rounded-xl p-8 flex flex-row justify-between items-center gap-4">
@@ -69,7 +69,7 @@
                         </div>
                         <div>
                             <p class="text-base font-medium">Task Assigned </p>
-                            <h3 class="text-3xl font-bold">06</h3>
+                            <h3 id="incomplete-task" class="text-3xl font-bold">06</h3>
                         </div>
                     </div>
                     <!-- discover something box -->
@@ -78,17 +78,16 @@
                             <img class="p-4" src="assets/board.png" alt="">
                         </div>
                         <div>
-                            <h3 class="text-white text-2xl font-medium">Discover Something <br> New Today!</h3>
+                            <a class="text-white text-2xl font-medium" href="blogs.html">Discover Something <br> New Today!</a>
                         </div>
                     </div>
                     <!-- date box -->
                     <div class="bg-light-sky rounded-xl p-8 flex flex-row justify-between items-center gap-4">
                         <div class="bg-white rounded-full">
-                            <img class="p-4" src="assets/checkbox.png" alt="">
+                            <img class="p-4" src="assets/calender.png" alt="">
                         </div>
-                        <div>
-                            <p class="text-base font-medium">Task Assigned </p>
-                            <h3 class="text-3xl font-bold">05</h3>
+                        <div id="current-date-container">
+                            
                         </div>
                     </div>
                 </div>
@@ -107,7 +106,7 @@
                                 <h4 class="text-base font-medium">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                                <button class="completed-btn btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -124,7 +123,7 @@
                                 <h4 class="text-base font-medium">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                                <button class="completed-btn btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +140,7 @@
                                 <h4 class="text-base font-medium">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                                <button class="completed-btn btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -158,7 +157,7 @@
                                 <h4 class="text-base font-medium">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                                <button class="completed-btn btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -175,7 +174,7 @@
                                 <h4 class="text-base font-medium">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                                <button class="completed-btn btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -192,7 +191,7 @@
                                 <h4 class="text-base font-medium">21 March 2025</h4>
                             </div>
                             <div>
-                                <button class="btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
+                                <button class="completed-btn btn text-base font-medium rounded-lg text-white bg-blue py-2 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -217,6 +216,9 @@
         </section>
     </main>
     <!-- main section end -->
+     <!-- script link -->
+      <script src="./Js/devBoard.js"></script>
+      <script src="./Js/bonus.js"></script>
 
 </body>
 
