@@ -10,7 +10,12 @@ function setInnerTextByIDandValue(id,value){
     document.getElementById(id).innerText = value;
 }
 
+//for handle toggle
+function handleToggle(id,status){
+    document.getElementById(id).style.display = status;
+}
+
 // current time
 
-const currentDate = new Date();
-const currentTime = currentDate. toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+const currentDates = new Date();
+const currentTime = currentDates. toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
