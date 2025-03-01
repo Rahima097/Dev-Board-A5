@@ -1,3 +1,4 @@
+const taskTitle = document.querySelector(".task-title")
 const completedBtns = document.querySelectorAll(".completed-btn");
 for (let i = 0; i < completedBtns.length; i++) {
     const completedBtn = completedBtns[i];
@@ -15,6 +16,14 @@ for (let i = 0; i < completedBtns.length; i++) {
             const sum2 = incompleteTask - 1;
             setInnerTextByIDandValue("total-count",sum1);
             setInnerTextByIDandValue("incomplete-task",sum2);
+
+            const container = document.getElementById("history-container");
+            const div = document.createElement("div");
+            div.classList.add("bg-light-sky")
+            div.innerHTML = `
+            <p class="text-sm p-2 text-dark">You have Completed This Task ${taskTitle} at ${currentTime}</p>
+            `
+            container.appendChild(div)
         }
     })
 }
