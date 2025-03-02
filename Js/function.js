@@ -5,7 +5,7 @@ function getInnerTextByID(id){
     return convertedValue;
 }
 
-// for get innerText
+// for set innerText
 function setInnerTextByIDandValue(id,value){
     document.getElementById(id).innerText = value;
 }
@@ -15,5 +15,4 @@ function handleToggle(id,status){
     document.getElementById(id).style.display = status;
 }
 
-// current time
 
