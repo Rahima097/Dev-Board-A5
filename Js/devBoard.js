@@ -1,4 +1,4 @@
-const taskTitles = document.getElementsByClassName("task-title")
+const taskTitles = document.getElementsByClassName("task-title");
 const completedBtns = document.querySelectorAll(".completed-btn");
 for (let i = 0; i < completedBtns.length; i++) {
     const completedBtn = completedBtns[i];
@@ -24,7 +24,7 @@ for (let i = 0; i < completedBtns.length; i++) {
             const taskTitleText = taskTitles[i].innerText;
             const currentDates = new Date();
             const currentTime = currentDates.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
-
+            // history container add
             const container = document.getElementById("history-container");
             const div = document.createElement("div");
             div.classList.add("bg-white")
@@ -33,7 +33,7 @@ for (let i = 0; i < completedBtns.length; i++) {
             `
             container.appendChild(div)
             
-            if(incompleteTask == 1 && totalCount == 27){
+            if(incompleteTask === 1){
                 alert("congratulations!!! You have completed all the current task.");
             }
         }
@@ -43,5 +43,12 @@ for (let i = 0; i < completedBtns.length; i++) {
 // blog page connect with discover something box
 document.getElementById("discover-something").addEventListener("click", function () {
     window.location.href = "./blogs.html"
+})
+
+// clear history container when click the clear history btn
+document.getElementById("clear-history-btn").addEventListener("click", function(){
+    // handleToggle("history-container", "none")
+    const historyContainer = document.getElementById("history-container");
+    historyContainer.innerHTML = '';
 })
 

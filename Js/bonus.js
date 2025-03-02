@@ -29,11 +29,5 @@ themeBtn.addEventListener('click', function(){
     document.body.style.backgroundColor = getRandomColor();
 });
 
-// clear history container when click the clear history btn
-document.getElementById("clear-history-btn").addEventListener("click", function(){
-    // handleToggle("history-container", "none")
-    const historyContainer = document.getElementById("history-container");
-    historyContainer.innerHTML = '';
-})
 
 
