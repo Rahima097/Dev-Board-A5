@@ -1,6 +1,6 @@
 // for get innerText
 function getInnerTextByID(id){
-    const value = document.getElementById(id).innerHTML;
+    const value = document.getElementById(id).innerText;
     const convertedValue = parseInt(value);
     return convertedValue;
 }
@@ -17,5 +17,3 @@ function handleToggle(id,status){
 
 // current time
 
-const currentDates = new Date();
-const currentTime = currentDates. toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
